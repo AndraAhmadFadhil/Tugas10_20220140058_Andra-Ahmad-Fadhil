@@ -1,0 +1,90 @@
+body {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    border: 5px solid rgb(249, 248, 248);
+    padding: 30px;
+    margin: 30px;
+    max-width: 450px;
+    width: 200%;
+    border-radius: 15px;
+    background-image: url('more.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    text-align: center;
+    color: rgb(6, 6, 6);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling specific sections' text color to white */
+form label,
+form .peminatan,
+form input,
+form select,
+form textarea {
+    color: rgb(247, 244, 244);
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgb(10, 10, 10);
+    opacity: 1;
+}
+
+input, select, textarea, button {
+    margin-top: 5px;
+    background-color: #f3f0f0;
+}
+
+.peminatan {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Ensure all peminatan labels are white */
+.peminatan label {
+    color: rgb(244, 240, 240);
+    margin-right: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #151617;
+    color: rgb(7, 7, 7);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #feffff;
+}
+
+/* Change text color to black when option is selected in the dropdown */
+select:focus,
+select:valid {
+    color: black;
+}
+
+/* Change text color to black when date is selected */
+input[type="text"]:focus,
+input[type="text"]:valid {
+    color: black;
+}
